@@ -1,2 +1,4 @@
 import './styles.css';
-import serch from './JS/search';
+
+
+import search from './JS/search';

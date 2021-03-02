@@ -1,15 +1,15 @@
-<h2>Title</h2>
+<h2>{{name}}</h2>
 <ul>
-    <li>Capital</li>
-    <li>Population</li>
+    <li>{{capital}}</li>
+    <li>{{population}}</li>
     <li>Language
-        <ol>
-            <li>German</li>
-            <li>French</li>
-            <li>Italian</li>
-        </ol>
+        <ul>
+        {{#each languages}}
+            <li>{{this.name}}</li>
+            {{/each}}
+        </ul>
     </li>
 </ul>
 <div class="wrapper">
-    <img src="" alt="">;
+    <img src="{{flag}}" alt="Flag of {{name}}">
 </div>

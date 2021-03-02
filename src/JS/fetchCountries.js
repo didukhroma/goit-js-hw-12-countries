@@ -1,4 +1,5 @@
-const url = 'https://restcountries.eu/rest/v2/name/united';
-export default fetch(url)
-  .then(response => response.json())
-  .then(console.log);
+const BASE_URL='https://restcountries.eu/rest/v2/name/';
+function fetchCountries(searchQuery) {
+  return fetch(`${BASE_URL}${searchQuery}`).then(response => response.json())
+}
+export default {fetchCountries};
