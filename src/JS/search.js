@@ -1,10 +1,7 @@
-import serchInputMarkup from '../template/searchInputTemplate.hbs';
-import createMarkupFunction from './createMarkup';
-const refs = {
-  bodyRef: document.querySelector('body'),
-};
-console.log(serchInputMarkup);
-console.log(createMarkupFunction);
+import createBaseMarkup from "./createBaseMarkup";
+createBaseMarkup();
+const refs ={
+  sectionRef: document.querySelector('.search'),
+  inputRef: document.querySelector('#js-input'),
+}
 
-createMarkupFunction(refs.bodyRef, serchInputMarkup());
-// refs.bodyRef.insertAdjacentHTML
