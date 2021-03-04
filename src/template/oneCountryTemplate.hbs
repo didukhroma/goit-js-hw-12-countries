@@ -1,15 +1,22 @@
-<h2>{{name}}</h2>
-<ul>
-    <li>{{capital}}</li>
-    <li>{{population}}</li>
-    <li>Language
-        <ul>
-        {{#each languages}}
-            <li>{{this.name}}</li>
-            {{/each}}
+<h2 class="search-result__title">{{name}}</h2>
+<div class="search-box">
+    <div class="search-box__wrapper">
+        <ul class="list">
+            <li class="search-box__item"><span class="search-box__text">Capital: </span>{{capital}}</li>
+            <li class="search-box__item"><span class="search-box__text">Population: </span>{{population}}</li>
+            <li class="search-box__item">
+                {{#if isOneNationalLanguage}}<span class="search-box__text">Language</span>
+                {{else}}<span class="search-box__text">Languages</span>
+                {{/if}}
+                <ul>
+                    {{#each languages}}
+                    <li>{{this.name}}</li>
+                    {{/each}}
+                </ul>
+            </li>
         </ul>
-    </li>
-</ul>
-<div class="wrapper">
-    <img src="{{flag}}" alt="Flag of {{name}}">
+    </div>
+    <div class="search-box__wrapper">
+        <img src="{{flag}}" alt="Flag of {{name}}">
+    </div>
 </div>

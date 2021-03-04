@@ -1,0 +1,35 @@
+.search {
+  padding-left: 40px;
+  flex-direction: column;
+  justify-content: center;
+}
+// .search-text,
+// .search-label {
+//   display: block;
+//   text-align: center;
+// }
+.search-form {
+  margin-bottom: 30px;
+}
+.search-text {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.search-input {
+  padding-left: 15px;
+}
+.search-box__iten {
+  font-size: 500;
+  margin-bottom: 15px;
+}
+.search-box {
+  display: flex;
+}
+.search-box__wrapper {
+  width: 50%;
+  height: 50px;
+}
+.search-result__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
