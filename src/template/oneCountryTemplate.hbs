@@ -1,12 +1,13 @@
-<h2 class="search-result__title">{{name}}</h2>
+<h2 class="search-result__title">We find next result</h2>
+<h3 class="search-result__title">{{name}}</h3>
 <div class="search-box">
     <div class="search-box__wrapper">
         <ul class="list">
             <li class="search-box__item"><span class="search-box__text">Capital: </span>{{capital}}</li>
             <li class="search-box__item"><span class="search-box__text">Population: </span>{{population}}</li>
             <li class="search-box__item">
-                {{#if isOneNationalLanguage}}<span class="search-box__text">Language</span>
-                {{else}}<span class="search-box__text">Languages</span>
+                {{#if isOneNationalLanguage}}<span class="search-box__text">Language :</span>
+                {{else}}<span class="search-box__text">Languages :</span>
                 {{/if}}
                 <ul>
                     {{#each languages}}
