@@ -1,0 +1,12 @@
+.search-result__title {
+  margin-bottom: 10px;
+}
+.search-wrapper {
+  padding-left: 30px;
+}
+.search-list {
+  list-style-type: square;
+  &__item {
+    font-weight: 500;
+  }
+}

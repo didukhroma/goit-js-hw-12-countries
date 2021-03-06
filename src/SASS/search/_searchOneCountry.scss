@@ -1,0 +1,22 @@
+.search-result__subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search-box {
+  display: flex;
+  &__wrapper {
+    min-width: 45%;
+    &:not(:last-child) {
+      padding-left: 40px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 700;
+  }
+  &__item ul {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+.search {
+  max-width: 600px;
+  padding: 30px;
+  margin: 0 auto;
+  &-form {
+    margin-bottom: 20px;
+  }
+  &-input {
+    padding-left: 10px;
+  }
+}

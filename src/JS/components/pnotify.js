@@ -1,7 +1,7 @@
 import { error, defaultStack } from '@pnotify/core/dist/PNotify.js';
-function pnotifyError() {
+function pnotifyError(string) {
   return error({
-    title: 'Too many matches found',
+    title: string,
     text: 'Please enter a more specific name!!!',
     icon: false,
     hide: false,
