@@ -14,12 +14,12 @@ const { boxRef, inputRef } = refLink();
 function onInputChange({ target }) {
   closeAllNotice();
   const searchQuery = target.value;
-  if (!searchQuery) return;
+  if (!searchQuery.trim()) return;
 
   API.fetchCountries(searchQuery)
     .then(response => {
-      const resultOneCountry = response.reduce((acc, item) => (acc = item));
       if (response.length === 1) {
+        const resultOneCountry = response.reduce((acc, item) => (acc = item));
         const { languages } = resultOneCountry;
         const isOneNationalLanguage = languages.length === 1;
         createMarkup(
